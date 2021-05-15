@@ -30,7 +30,7 @@ session = vk.Session(access_token=Token.get_token())
 vk_api = vk.API(session, v='5.62')
 
 # Интерфейс программы
-layout = [[sg.Text('ID:', size=(400, 1))], [sg.InputText(size=(400, 1), default_text='154239070', key='-IN-')],
+layout = [[sg.Text('ID:', size=(400, 1))], [sg.InputText(size=(400, 1), default_text='YOUR VK ID', key='-IN-')],
           [sg.Button('Find...', enable_events=True, key='-FUNCTION-', font='Arial')],
           [sg.Listbox(values=[], enable_events=True, size=(400, 800), key='-LIST-')]]
 window = sg.Window('VK scraper', layout, size=(450, 900))
